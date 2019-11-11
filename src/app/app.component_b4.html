@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <h1>Astronaut Directory</h1>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="menu-button">Log out</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened role="region">
+    <mat-divider></mat-divider>
+    <ng-container *ngFor="let filter of filters | async; last as last">
+      <mat-list>
+        <h3 matSubheader>{{ filter.displayName }}</h3>
+      </mat-list>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </ng-container>
+  </mat-sidenav>
+  <mat-sidenav-content role="region">
+    <mat-card *ngFor="let astronaut of astronauts | async">
+      <mat-card-title>{{astronaut.name}}</mat-card-title>
+      <img mat-card-image [src]="astronaut.photo" alt="animal">
+      <mat-card-content>
+        <dl>
+          <dt class="mat-small">Name</dt>
+          <dd class="mat-body-2">{{ astronaut.name }}</dd>
+          <dt class="mat-small">Space walks</dt>
+          <dd class="mat-body-2">{{ astronaut.spaceWalks }}</dd>
+          <dt class="mat-small">Undergraduate major</dt>
+          <dd class="mat-body-2">{{ astronaut.undergraduateMajor }}</dd>
+        </dl>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
