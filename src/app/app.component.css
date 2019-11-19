@@ -35,11 +35,11 @@ mat-toolbar {
 }
 
 mat-sidenav-container {
-  grid-area: page-container
+  grid-area: page-container;
 }
 
 mat-sidenav-content {
-  padding: 16px;
+  padding: 0 16px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, 280px);
@@ -97,3 +97,4 @@ mat-menu {
   right: 50px;
   z-index: 10;
 }
+

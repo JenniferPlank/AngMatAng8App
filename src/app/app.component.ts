@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { AstronautService } from './astronaut.service';
+import { AnimalService } from './animal.service';
 import { Observable } from 'rxjs';
-import { Astronaut, FilterState, Filter, Option } from './types';
+import { Animal, FilterState, Filter, Option } from './types';
 import { MatDialog } from '@angular/material/dialog';
-import { AddAstronautComponent } from './add-astronaut/add-astronaut.component';
+import { AddAnimalComponent } from './add-animal/add-animal.component';
 
 @Component({
   selector: 'app-root',
@@ -11,24 +11,24 @@ import { AddAstronautComponent } from './add-astronaut/add-astronaut.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  astronauts: Observable<Astronaut[]>;
+  animals: Observable<Animal[]>;
   filterState: FilterState;
   filters: Observable<Filter[]>;
 
-  constructor(astronautService: AstronautService, private dialog: MatDialog) {
-    this.astronauts = astronautService.astronauts;
-    this.filterState = astronautService.filterState;
-    this.filters = astronautService.filters;
+  constructor(animalService: AnimalService, private dialog: MatDialog) {
+    this.animals = animalService.animals;
+    this.filterState = animalService.filterState;
+    this.filters = animalService.filters;
   }
 
   changeFilter(category: string, option: Option) {
     this.filterState[category] = option;
   }
 
-  addAstronaut() {
-    this.dialog.open(AddAstronautComponent, {
+  addAnimal() {
+    this.dialog.open(AddAnimalComponent, {
       width: '500px',
-      ariaLabel: 'Add an astronaut'
+      ariaLabel: 'Add an animal'
     });
   }
 }

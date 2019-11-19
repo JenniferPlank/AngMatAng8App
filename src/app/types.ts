@@ -1,5 +1,6 @@
-export interface Astronaut {
+export interface Animal {
   name: string;
+  Scientific: string;
   year: number;
   group: number;
   status: string;
@@ -19,6 +20,9 @@ export interface Astronaut {
   deathDate: string;
   deathMission: string;
   photo: string;
+  ScientificName: string;
+  ConservationStatus: string;
+  Range: string;
 }
 
 export interface Filter {

@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <h1>Astronaut Directory</h1>
+  <h1>Critically Endangered Animals</h1>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon>account_circle</mat-icon>
   </button>
@@ -10,7 +10,7 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened role="region">
     <mat-form-field class="search">
-      <input matInput placeholder="Search astronauts">
+      <input matInput placeholder="Search animals">
     </mat-form-field>
     <mat-divider></mat-divider>
     <ng-container *ngFor="let filter of filters | async; last as last">
@@ -40,17 +40,20 @@
     </ng-container>
   </mat-sidenav>
   <mat-sidenav-content role="region">
-    <mat-card *ngFor="let astronaut of astronauts | async">
-      <mat-card-title>{{astronaut.name}}</mat-card-title>
-      <img mat-card-image [src]="astronaut.photo">
+
+    <mat-card *ngFor="let animal of animals | async">
+      <mat-card-title>{{animal.name}}</mat-card-title>
+      <img mat-card-image [src]="animal.photo" alt="">
       <mat-card-content>
         <dl>
           <dt class="mat-small">Name</dt>
-          <dd class="mat-body-2">{{ astronaut.name }}</dd>
-          <dt class="mat-small">Space walks</dt>
-          <dd class="mat-body-2">{{ astronaut.spaceWalks }}</dd>
-          <dt class="mat-small">Undergraduate major</dt>
-          <dd class="mat-body-2">{{ astronaut.undergraduateMajor }}</dd>
+          <dd class="mat-body-2">{{ animal.name}}</dd>
+          <dt class="mat-small">Scientific</dt>
+          <dd class="mat-body-2">{{ animal.Scientific }}</dd>
+          <dt class="mat-small">Status</dt>
+          <dd class="mat-body-2">{{ animal.Status }}</dd>
+          <dt class="mat-small">Range</dt>
+          <dd class="mat-body-2">{{ animal.Range }}</dd>
         </dl>
       </mat-card-content>
     </mat-card>
@@ -58,7 +61,7 @@
 </mat-sidenav-container>
 
 
-<footer class="mat-toolbar mat-primary mat-toolbar-single-row">Jen's Footer</footer>
+<footer class="mat-toolbar mat-primary mat-toolbar-single-row">aaa</footer>
 
 
 

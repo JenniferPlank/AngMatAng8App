@@ -21,12 +21,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AddAstronautComponent } from './add-astronaut/add-astronaut.component';
+import {AddAnimalComponent} from './add-animal/add-animal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddAstronautComponent
+    AddAnimalComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +52,9 @@ import { AddAstronautComponent } from './add-astronaut/add-astronaut.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  // Don't forget to list AddAstronautComponent as an entry component!
+  // Don't forget to list AddAnimalComponent as an entry component!
   // This is needed because it is added to the DOM programmatically--
   // it doesn't appear in the template of any other component
-  entryComponents: [AddAstronautComponent]
+  entryComponents: [AddAnimalComponent]
 })
 export class AppModule { }
