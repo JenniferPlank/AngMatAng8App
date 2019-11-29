@@ -21,12 +21,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {AddAnimalComponent} from './add-animal/add-animal.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AddAnimalComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +53,6 @@ import {AddAnimalComponent} from './add-animal/add-animal.component';
   // Don't forget to list AddAnimalComponent as an entry component!
   // This is needed because it is added to the DOM programmatically--
   // it doesn't appear in the template of any other component
-  entryComponents: [AddAnimalComponent]
+  entryComponents: [AppComponent]
 })
 export class AppModule { }

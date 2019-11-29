@@ -9,35 +9,57 @@
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened role="region">
-    <mat-form-field class="search">
+    <!--mat-form-field class="search">
       <input matInput placeholder="Search animals">
-    </mat-form-field>
-    <mat-divider></mat-divider>
-    <ng-container *ngFor="let filter of filters | async; last as last">
+    </mat-form-field-->
+    <!--mat-divider></mat-divider>
+    <ng-container *ngFor="let animal of animals | async; last as last">
       <mat-list>
-        <h3 matSubheader>{{ filter.displayName }}</h3>
+        <h3 matSubheader>{{ animal.name }}</h3>
 
-        <ng-container *ngIf="filterState[filter.category] === ''; else chip">
-          <mat-list-item *ngFor="let val of filter.options">
-            <button mat-button class="list-button" (click)="changeFilter(filter.category, val)">
-              {{ val }}
-            </button>
-          </mat-list-item>
-        </ng-container>
-
-        <ng-template #chip>
-          <mat-chip-list>
-            <ng-container *ngFor="let val of filter.options">
-              <mat-chip *ngIf="filterState[filter.category] === val" (removed)="changeFilter(filter.category, '')">
-                {{val}}
-                <mat-icon matChipRemove>cancel</mat-icon>
-              </mat-chip>
-            </ng-container>
-          </mat-chip-list>
-        </ng-template>
       </mat-list>
       <mat-divider *ngIf="!last"></mat-divider>
+    </ng-container-->
+
+
+    <ng-container>
+
+      <h3 class="primary-text-color center">Organizations That Help</h3>
+
+      <a class="link secondary-text-color" href="https://www.worldwildlife.org/" target="_blank">World Wildlife Fund</a>
+
+      <a class="link secondary-text-color" href="https://www.greenpeace.org/canada/en/" target="_blank">Greenpeace</a>
+
+      <a class="link secondary-text-color" href="https://www.sierraclub.ca/" target="_blank">The Sierra Club</a>
+
+      <a class="link secondary-text-color" href="https://davidsuzuki.org/" target="_blank">David Suzuki Foundation</a>
+
+      <a class="link secondary-text-color" href="https://rhinos.org/" target="_blank">International Rhino Foundation</a>
+
+      <a class="link secondary-text-color" href="https://cpaws.org/" target="_blank">Canadian Parks and Wilderness Society</a>
+
+      <a class="link secondary-text-color" href="https://www.projectaware.org/" target="_blank">Project Aware</a>
+
+      <a class="link secondary-text-color" href="https://www.janegoodall.org/" target="_blank">The Jane Goodall Institute</a>
+
+      <a class="link secondary-text-color" href="https://www.panthera.org/" target="_blank">Pantera</a>
+
+      <a class="link secondary-text-color" href="https://www.wcs.org/" target="_blank">The Wildlife Conservation Society</a>
+
+      <a class="link secondary-text-color" href="https://www.iucn.org/" target="_blank">International Union for Conservation of Nature</a>
+
+      <a class="link secondary-text-color" href="https://www.gorilladoctors.org/" target="_blank">Gorilla Doctors</a>
+
+      <a class="link secondary-text-color" href="https://defenders.org/" target="_blank">Defenders of Wildlife</a>
+
+      <a class="link secondary-text-color" href="https://www.audubon.org/" target="_blank">Audobon</a>
+
     </ng-container>
+
+
+
+
+
   </mat-sidenav>
   <mat-sidenav-content role="region">
 
@@ -45,13 +67,13 @@
       <mat-card-title>{{animal.name}}</mat-card-title>
       <img mat-card-image [src]="animal.photo" alt="">
       <mat-card-content>
-        <dl>
+        <dl class="myContent">
           <dt class="mat-small">Name</dt>
           <dd class="mat-body-2">{{ animal.name}}</dd>
           <dt class="mat-small">Scientific</dt>
           <dd class="mat-body-2">{{ animal.Scientific }}</dd>
           <dt class="mat-small">Status</dt>
-          <dd class="mat-body-2">{{ animal.Status }}</dd>
+          <dd class="mat-body-2">{{ animal.status }}</dd>
           <dt class="mat-small">Range</dt>
           <dd class="mat-body-2">{{ animal.Range }}</dd>
         </dl>
@@ -61,8 +83,4 @@
 </mat-sidenav-container>
 
 
-<footer class="mat-toolbar mat-primary mat-toolbar-single-row">aaa</footer>
-
-
-
-
+<footer class="mat-toolbar mat-primary mat-toolbar-single-row"></footer>
