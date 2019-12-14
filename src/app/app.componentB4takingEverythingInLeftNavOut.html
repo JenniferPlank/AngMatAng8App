@@ -1,0 +1,64 @@
+<mat-toolbar color="primary">
+  <h1>Critically Endangered Animals</h1>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="menu-button">Log out</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened role="region">
+    <mat-form-field class="search">
+      <input matInput placeholder="Search animals">
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <ng-container *ngFor="let filter of filters | async; last as last">
+      <mat-list>
+        <h3 matSubheader>{{ filter.displayName }}</h3>
+
+        <ng-container *ngIf="filterState[filter.category] === ''; else chip">
+          <mat-list-item *ngFor="let val of filter.options">
+            <button mat-button class="list-button" (click)="changeFilter(filter.category, val)">
+              {{ val }}
+            </button>
+          </mat-list-item>
+        </ng-container>
+
+        <ng-template #chip>
+          <mat-chip-list>
+            <ng-container *ngFor="let val of filter.options">
+              <mat-chip *ngIf="filterState[filter.category] === val" (removed)="changeFilter(filter.category, '')">
+                {{val}}
+                <mat-icon matChipRemove>cancel</mat-icon>
+              </mat-chip>
+            </ng-container>
+          </mat-chip-list>
+        </ng-template>
+      </mat-list>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </ng-container>
+  </mat-sidenav>
+  <mat-sidenav-content role="region">
+
+    <mat-card *ngFor="let animal of animals | async">
+      <mat-card-title>{{animal.name}}</mat-card-title>
+      <img mat-card-image [src]="animal.photo" alt="">
+      <mat-card-content>
+        <dl class="myContent">
+          <dt class="mat-small">Name</dt>
+          <dd class="mat-body-2 special">{{ animal.name}}</dd>
+          <dt class="mat-small">Scientific</dt>
+          <dd class="mat-body-2 special">{{ animal.Scientific }}</dd>
+          <dt class="mat-small">Status</dt>
+          <dd class="mat-body-2 special">{{ animal.status }}</dd>
+          <dt class="mat-small">Range</dt>
+          <dd class="mat-body-2 Xspecial">{{ animal.Range }}</dd>
+        </dl>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<footer class="mat-toolbar mat-primary mat-toolbar-single-row"></footer>

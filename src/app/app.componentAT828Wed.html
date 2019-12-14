@@ -1,0 +1,63 @@
+<mat-toolbar color="primary">
+  <h1>Critically Endangered Animals</h1>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="menu-button">Log out</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened role="region">
+<!--
+    <a href="http://www.wwf.ca/" target=”_blank”>World Wildlife Canada</a>
+
+    <a href="http://wwf.panda.org/" target=”_blank”>WWF</a>
+
+    <a href="https://www.greenpeace.org/canada/en/" target=”_blank”>Greenpeace</a>
+
+    <a href="https://davidsuzuki.org/" target=”_blank”>David Suzuki Foundation</a>
+
+    <a href="https://www.sierraclub.ca/" target='blank'>Sierra Club Canada</a>
+
+    <a href="https://www.ecojustice.ca/" target='blank'>Ecojustices</a>
+
+    <a href="https://naturecanada.ca/" target='blank'>Nature Canada</a>
+
+    <a href="https://environmentaldefence.ca/" target='blank'>Environmental Defence Canada</a>
+
+    <a href="https://cpaws.org/" target='blank'target='blank'>Canadian Parks and Wilderness Society: CPAWS</a>
+
+    <a href="https://www.stand.earth/" target='blank'>Stand.Earth</a>
+
+    <a href="https://www.pollutionprobe.org/" target='blank'>Pollution Probe</a>
+
+    <a href="https://www.audubon.org/" target='blank'>Audubon</a>
+
+    <a href="" target='blank'></a>
+-->
+
+  </mat-sidenav>
+  <mat-sidenav-content role="region">
+
+    <mat-card *ngFor="let animal of animals | async">
+      <mat-card-title>{{animal.name}}</mat-card-title>
+      <img mat-card-image [src]="animal.photo" alt="">
+      <mat-card-content>
+        <dl class="myContent">
+          <dt class="mat-small">Name</dt>ng
+          <dd class="mat-body-2 special">{{ animal.name}}</dd>
+          <dt class="mat-small">Scientific</dt>
+          <dd class="mat-body-2 special">{{ animal.Scientific }}</dd>
+          <dt class="mat-small">Status</dt>
+          <dd class="mat-body-2 special">{{ animal.status }}</dd>
+          <dt class="mat-small">Range</dt>
+          <dd class="mat-body-2 Xspecial">{{ animal.Range }}</dd>
+        </dl>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<footer class="mat-toolbar mat-primary mat-toolbar-single-row"></footer>

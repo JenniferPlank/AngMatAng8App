@@ -1,0 +1,134 @@
+.link {
+  display: block;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid var(--color-blue);
+  margin: 0.5rem;
+  border-bottom-width: 3px;
+  border-radius: 2rem;
+  text-decoration: none;
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 50%;
+    transform-origin: 0 0;
+  }
+  &:before {
+    // content: "";
+    transform: scale(0.5) translateY(-50%);
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to right bottom,
+        transparent calc(50% - 2px),
+        black calc(50% - 2px),
+        black calc(50% + 2px),
+        transparent calc(50% + 2px)
+    ),
+    linear-gradient(
+        to left bottom,
+        transparent calc(50% - 2px),
+        black calc(50% - 2px),
+        black calc(50% + 2px),
+        transparent calc(50% + 2px)
+    );
+  }
+  &:after {
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to right bottom,
+        transparent calc(50% - 2px),
+        black calc(50% - 2px),
+        black calc(50% + 2px),
+        transparent calc(50% + 2px)
+    ),
+    linear-gradient(
+        to left bottom,
+        transparent calc(50% - 2px),
+        black calc(50% - 2px),
+        black calc(50% + 2px),
+        transparent calc(50% + 2px)
+    );
+    transform: scale(0.5, .6) translateY(-50%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
+    background-position: left 0.45rem bottom 0.25rem,
+    left -0.85rem bottom 0.25rem;
+  }
+}
+
+// Basic link
+a {
+  // A link without a href
+  &:not([href]) {
+    &:before {
+      content: "";
+    }
+  }
+  // Target blank, but no href
+  &[target="_blank"] {
+    &:not([href]) {
+      &:before {
+        content: none;
+      }
+      &:after {
+        content: "";
+      }
+      background-color: rgba(0, 250, 250, 0.25);
+      border-color: rgba(0, 250, 250, 1);
+
+      // ah oh, without the relopener
+      &:not([rel="noopener"]) {
+        &:after {
+          content: none;
+        }
+        &:before {
+          content: "";
+        }
+        background-color: rgba(200, 0, 0, 0.25);
+        border-color: rgba(200, 0, 0, 1);
+      }
+    }
+  }
+
+  // Link with actual href attribute
+  &[href] {
+    &:before{ content: none; }
+    &:after{ content: ""; }
+    border-color: green;
+    background-color: rgba(100, 255, 0, 0.25);
+
+    // Internal link
+    &[href^="#"] {
+      &:before{ content: none; }
+      &:after{ content: ""; }
+      border-color:  rgba(200, 200, 0, 1);
+      background-color: rgba(200, 200, 0, 0.25);
+    }
+    // External link
+    &[href^="http"] {
+      &:before{ content: none; }
+      &:after{ content: ""; }
+      border-color: blue;
+      background-color: rgba(0, 100, 255, 0.25);
+    }
+
+    // External link with a target blank
+    &[target="_blank"] {
+      &:before{ content: none; }
+      &:after{ content: ""; }
+      border-color: rgba(200, 0, 200, 1);
+      background-color: rgba(200, 0, 200, 0.25);
+
+      // External link with a target blank, but without the noopener
+      &:not([rel="noopener"]) {
+        &:after{ content: none; }
+        &:before{ content: ""; }
+        border-color: rgba(255, 100, 0, 1);
+        background-color: rgba(255, 100, 0, 0.25);
+      }
+    }
+  }
+}
