@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -19,15 +22,30 @@ import { MatNativeDateModule } from '@angular/material';
 import { MatSelectModule,  } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { SizeDetectorComponent } from './size-detector/size-detector.component';
+import { ResizeService } from './size-detector/resize.service';
+
+import { FormsModule } from '@angular/forms';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HelloComponent,
+    SizeDetectorComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
@@ -47,8 +65,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatNativeDateModule,
     MatSelectModule,
     ReactiveFormsModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [ResizeService],
   bootstrap: [AppComponent],
   // Don't forget to list AddAnimalComponent as an entry component!
   // This is needed because it is added to the DOM programmatically--
