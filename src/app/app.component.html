@@ -8,47 +8,17 @@
   </mat-menu>
 </mat-toolbar>
 
-<mat-sidenav-container fxFlexFill class="example-container">
-  <mat-sidenav fxLayout="column" mode="side" opened="false">
-    <div fxLayout="column">
-      <a href="#" mat-button>Top Menu Item 1</a>
-      <a href="#" mat-button>Top Menu Item 2</a>
-      <a href="#" mat-button>Top Menu Item 3</a>
-      <a href="#" mat-button>Top Menu Item 4</a>
-      <a href="#" mat-button>Top Menu Item 5</a>
-      <a href="#" mat-button>Top Menu Item 6</a>
-    </div>
-  </mat-sidenav>
-  <mat-sidenav-content fxFlexFill> Main content</mat-sidenav-content>
-</mat-sidenav-container>
-
-<div style="height: 100vh;">
-  <mat-toolbar color="primary">
 
 
-
-      <div fxShow="true" [fxShow.gt-sm]="true">
-
-      <!--div fxShow="true" fxShow.lt-md="true"-->
-
-      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      <a href="#" mat-button>Menu Item 1</a>
-      <a href="#" mat-button>Menu Item 2</a>
-      <a href="#" mat-button>Menu Item 3</a>
-      <a href="#" mat-button>Menu Item 4</a>
-      <a href="#" mat-button>Menu Item 5</a>
-      <a href="#" mat-button>Menu Item 6</a>
-    </div>
-
-    <div fxShow="true" fxHide.gt-sm="true">
-      <a href="#" (click)="sidenav.toggle()">Organizations</a>
-    </div>
-  </mat-toolbar>
-
+<div>
   <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column">
+    <mat-sidenav  opened mode="side" fxLayout="column">
+
+
       <div fxLayout="column">
-        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+
+        <h3 class="primary-text-color center">Organizations That Help</h3>
+        <!--a (click)="sidenav.toggle()" href="#" mat-button>Close</a-->
         <a class="link secondary-text-color" href="https://www.worldwildlife.org/" target="_blank">World Wildlife
           Fund</a>
         <a class="link secondary-text-color" href="https://www.greenpeace.org/canada/en/" target="_blank">Greenpeace</a>
@@ -89,5 +59,7 @@
         </mat-card-content>
       </mat-card>
     </mat-sidenav-content>
+    <footer></footer>
   </mat-sidenav-container>
+
 </div>
