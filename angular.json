@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blast-off-with-am": {
+    "fitness-tracker": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blast-off-with-am",
+            "outputPath": "dist/fitness-tracker",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,11 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/theme.scss",
               "src/styles.css"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -45,32 +43,25 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "buildOptimizer": true
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blast-off-with-am:build"
+            "browserTarget": "fitness-tracker:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blast-off-with-am:build:production"
+              "browserTarget": "fitness-tracker:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blast-off-with-am:build"
+            "browserTarget": "fitness-tracker:build"
           }
         },
         "test": {
@@ -81,7 +72,6 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/theme.scss",
               "src/styles.css"
             ],
             "scripts": [],
@@ -105,21 +95,15 @@
         }
       }
     },
-    "blast-off-with-am-e2e": {
+    "fitness-tracker-e2e": {
       "root": "e2e/",
       "projectType": "application",
-      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blast-off-with-am:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "blast-off-with-am:serve:production"
-            }
+            "devServerTarget": "fitness-tracker:serve"
           }
         },
         "lint": {
@@ -134,5 +118,5 @@
       }
     }
   },
-  "defaultProject": "blast-off-with-am"
+  "defaultProject": "fitness-tracker"
 }

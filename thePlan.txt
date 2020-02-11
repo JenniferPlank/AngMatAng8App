@@ -1,0 +1,3 @@
+I've added the global.ts to the project
+
+ng generate @angular/material:material-nav --name=main-nav
