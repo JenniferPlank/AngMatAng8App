@@ -1,24 +1,30 @@
-[
+[{
+  "name": "Bornean Orangutan",
+  "Scientific": "Pongo pygmaeus",
+  "status": "Critically Endangered",
+  "Range": "Borneo",
+  "photo": "assets/Black_Rhino_280_xs.png"
+},
   {
-    "name": "Amur Leopard",
+    "name": "5",
     "Scientific": "Panthera pardus orientalis",
     "status": "Critically Endangered",
     "Range": "Southeastern Russia and Northern China",
-    "photo": "assets/Amur_Leopard_Pittsburgh_Zoo.png"
+    "photo": "assets/Black_Rhino_280_xs.png"
   },
   {
     "name": "Black Rhino",
     "Scientific": "Diceros bicornis",
     "status": "Critcally Endangered",
     "Range": "Eastern and Southern Africa",
-    "photo": "assets/Black_Rhino.png"
+    "photo": "assets/Black_Rhino_280_xs.png"
   },
   {
     "name": "Bornean Orangutan",
     "Scientific": "Pongo pygmaeus",
     "status": "Critically Endangered",
     "Range": "Borneo",
-    "photo": "assets/Bornean_Orangutan.png"
+    "photo": "assets/Black_Rhino_280_xs.png"
   },
   {
     "name": "Cross River Gorilla",
