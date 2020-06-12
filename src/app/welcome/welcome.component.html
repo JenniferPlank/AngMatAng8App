@@ -12,3 +12,30 @@
     <p>Never stop! Dive into new challenges every day</p>
   </section>
 </div>
+<mat-sidenav-container>
+
+  <mat-sidenav-content role="region">
+
+    <mat-card *ngFor="let animals  of animals | async">
+        <mat-card-title>{{animals.name}}</mat-card-title>
+        <img [srcset]="animals.photo" [alt]>
+        <mat-card-content>
+
+          <dl class="myContent">
+          <dt class="mat-small">Name</dt>
+          <dd class="mat-body-2">{{ animals.name}}</dd>
+          <dt class="mat-small">Scientific</dt>
+          <dd class="mat-body-2">{{ animals.ScientificName }}</dd>
+          <dt class="mat-small">Status</dt>
+          <dd class="mat-body-2">{{ animals.status }}</dd>
+          <dt class="mat-small">Range</dt>
+          <dd class="mat-body-2">{{ animals.Range }}</dd>
+        </dl>
+      </mat-card-content>
+    </mat-card>
+</mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+<footer class="mat-toolbar mat-primary mat-toolbar-single-row"></footer>
