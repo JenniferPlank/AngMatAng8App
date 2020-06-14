@@ -1,153 +1,128 @@
-[{
-  "name": "Bornean Orangutan",
+[{"name": "Bornean Orangutan",
   "Scientific": "Pongo pygmaeus",
   "status": "Critically Endangered",
-  "Range": "Borneo",
+  "Range": "Borne",
   "photo": "assets/Black_Rhino_280_xs.png",
   "ImageAttribution": "me"
-},
-  {
-    "name": "Amur Leopard",
+},{"name": "Amur Leopard",
     "Scientific": "Panthera pardus orientalis",
     "status": "Critically Endangered",
     "Range": "Southeastern Russia and Northern China",
     "photo": "assets/AmurLeopard-250px.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Black Rhino",
+    "ImageAttribution": "Daniel Ramirez"
+  },{"name": "Black Rhino",
     "Scientific": "Diceros bicornis",
     "status": "Critcally Endangered",
     "Range": "Eastern and Southern Africa",
     "photo": "assets/Black_Rhino.png",
     "ImageAttribution": "me"
-  },
-  {
+  },{
     "name": "Bornean Orangutan",
     "Scientific": "Pongo pygmaeus",
     "status": "Critically Endangered",
     "Range": "Borneo",
     "photo": "assets/Bornean_orangutan__Pongo_pygmaeus__Tanjung_Putting_National_Park_03_Original_iokvbd.jpg",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Cross River Gorilla",
-    "Scientific": "Gorilla gorilla diehli",
-    "status": "Critically Endangered",
-    "Range": "Forested hills and mountains of the Cameroon-Nigeria border region",
-    "photo": "assets/Cross-river-gorilla.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Lowland Gorilla",
-    "Scientific": "Gorilla beringei graueri",
-    "status": "Critically Endangered",
-    "Range": "Mountainous forests of Nigeria and Cameroon",
-    "photo": "assets/Eastern_Lowland_Gorilla_ZOO_Antwerp.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Hawksbill Sea Turtle",
-    "Scientific": "Eretmochelys imbricata",
-    "status": "Critically Endangered",
-    "Range": "Atlantic, Indian and Pacific Oceans",
-    "photo": "assets/Hawksbill_Sea_Turtle.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Javan Rhino",
-    "Scientific": "Rhinoceros sondaicus",
-    "status": "Critically Endangered",
-    "Range": "Indonesia",
-    "photo": "assets/JavanRhino-PeterMaas-NaturalisLeiden.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Malayan Tiger",
-    "Scientific": "Panthera tigris jacksoni",
-    "status": "Critically Endangered",
-    "Range": "Malay Peninusla and Southern Thailand",
-    "photo": "assets/Malaysian_Tiger.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Sumatran Orangutan",
-    "Scientific": "Pongo pygmaeus",
-    "status": "Critically Endangered",
-    "Range": "Sumatra",
-    "photo": "src/assets/Sumatran_Orangutan.png",
-    "ImageAttribution": "John Vetterli"
-  },
-  {
-    "name": "Saola",
-    "Scientific": "Pseudoryx nghetinhensis",
-    "status": "Critically Endangered",
-    "Range": "Vietnam and Laos",
-    "photo": "assets/Saola_skin.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "South China Tiger",
-    "Scientific": "Panthera tigris amoyensis",
-    "status": "Critically Endangered",
-    "Range": "Southern China",
-    "photo": "assets/Suedchinesischer_Tiger.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Sumatran Elephant",
-    "Scientific": "Elephas maximus sumatranus",
-    "status": "Critically Endangered",
-    "Range": "Sumatra",
-    "photo": "assets/Sumatran_elephants.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Sumatran Orangutan",
-    "Scientific": "Pongo abelii",
-    "status": "Critically Endangered",
-    "Range": "Sumatra",
-    "photo": "assets/Sumatran_Orangutan.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Sumatran Rhino",
-    "Scientific": "Dicerorhinus sumatrensis",
-    "status": "Critically Endangered",
-    "Range": "Sumatra",
-    "photo": "assets/Sumatran_Rhino.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Sumatran Tiger",
-    "Scientific": "Panthera tigris sondaica",
-    "status": "Critically Endangered",
-    "Range": "Sumatra",
-    "photo": "assets/tiger-stripe.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Vaquita",
-    "Scientific": "Phocoena sinus",
-    "status": "Critically Endangered",
-    "Range": "Northern part of Gulf of California",
-    "photo": "assets/Vaquitas.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Saiga antelope",
-    "Scientific": "Saiga tatarica",
-    "status": "Critically Endangered",
-    "Range": "Russia, Kazakhstan",
-    "photo": "assets/Saiga_tartarica.png",
-    "ImageAttribution": "me"
-  },
-  {
-    "name": "Pangolin",
-    "Scientific": "Sunda pangolin",
-    "status": "Critically Endangered",
-    "Range": "Southeast Asia",
-    "photo": "assets/282px-Pangolin_brought_to_the_Range_office,_KMTR_AJTJ_cropped.jpg",
-    "ImageAttribution": "me"
-  }
-]
+    "ImageAttribution": "Thomas Fuhrmann"
+  },{
+  "name": "Cross River Gorilla",
+  "Scientific": "Gorilla gorilla diehli",
+  "status": "Critically Endangered",
+  "Range": "Forested hills and mountains of the Cameroon-Nigeria border region",
+  "photo": "assets/Cross-river-gorilla.png",
+  "ImageAttribution": "Julielangford"
+},{"name": "Lowland Gorilla",
+  "Scientific": "Gorilla beringei graueri",
+  "status": "Critically Endangered",
+  "Range": "Mountainous forests of Nigeria and Cameroon",
+  "photo": "assets/Eastern_Lowland_Gorilla_ZOO_Antwerp.png",
+  "ImageAttribution": "Isai Symens"
+},{
+  "name": "Hawksbill Sea Turtle",
+  "Scientific": "Eretmochelys imbricata",
+  "status": "Critically Endangered",
+  "Range": "Atlantic, Indian and Pacific Oceans",
+  "photo": "assets/Hawksbill_Sea_Turtle.png",
+  "ImageAttribution": "DRVIP93"
+},{"name": "Javan Rhino",
+  "Scientific": "Rhinoceros sondaicus",
+  "status": "Critically Endangered",
+  "Range": "Indonesia",
+  "photo": "assets/JavanRhino-PeterMaas-NaturalisLeiden.png",
+  "ImageAttribution": "Shankar70"
+  },{"name": "Malayan Tiger",
+  "Scientific": "Panthera tigris jacksoni",
+  "status": "Critically Endangered",
+  "Range": "Malay Peninusla and Southern Thailand",
+  "photo": "assets/Malaysian_Tiger.png",
+  "ImageAttribution": "Nmwalter"
+},{
+  "name": "Sumatran Orangutan",
+  "Scientific": "Pongo pygmaeus",
+  "status": "Critically Endangered",
+  "Range": "Sumatra",
+  "photo": "src/assets/Sumatran_Orangutan.png",
+  "ImageAttribution": "John Vetterli"
+  },{
+  "name": "Saola",
+  "Scientific": "Pseudoryx nghetinhensis",
+  "status": "Critically Endangered",
+  "Range": "Vietnam and Laos",
+  "photo": "assets/Saola_skin.png",
+  "ImageAttribution": "Pseudoryx_nghetinhensis.  -Saolo -  Silviculture"
+  },{
+  "name": "South China Tiger",
+  "Scientific": "Panthera tigris amoyensis",
+  "status": "Critically Endangered",
+  "Range": "Southern China",
+  "photo": "assets/Suedchinesischer_Tiger.png",
+  "ImageAttribution": "J. Patrick Fischer"
+  },{
+  "name": "Sumatran Elephant",
+  "Scientific": "Elephas maximus sumatranus",
+  "status": "Critically Endangered",
+  "Range": "Sumatra",
+  "photo": "assets/Sumatran_elephants.png",
+  "ImageAttribution": "Sumatran Elephant with high trunk -- Midori"
+},{
+  "name": "Sumatran Orangutan",
+  "Scientific": "Pongo abelii",
+  "status": "Critically Endangered",
+  "Range": "Sumatra",
+  "photo": "assets/Sumatran_Orangutan.png",
+  "ImageAttribution": "me"
+},{
+  "name": "Sumatran Rhino",
+  "Scientific": "Dicerorhinus sumatrensis",
+  "status": "Critically Endangered",
+  "Range": "Sumatra",
+  "photo": "assets/Sumatran_Rhino.png",
+  "ImageAttribution": "Charles W. Hardin"
+},{
+  "name": "Sumatran Tiger",
+  "Scientific": "Panthera tigris sondaica",
+  "status": "Critically Endangered",
+  "Range": "Sumatra",
+  "photo": "assets/tiger-stripe.png",
+  "ImageAttribution": "me"
+  },{
+  "name": "Vaquita",
+  "Scientific": "Phocoena sinus",
+  "status": "Critically Endangered",
+  "Range": "Northern part of Gulf of California",
+  "photo": "assets/Vaquitas.png",
+  "ImageAttribution": "Paula Olson, NOAA / Public domain"
+  },{
+  "name": "Saiga antelope",
+  "Scientific": "Saiga tatarica",
+  "status": "Critically Endangered",
+  "Range": "Russia, Kazakhstan",
+  "photo": "assets/Saiga_tartarica.png",
+  "ImageAttribution": "Andrey Giljov"
+  },{
+  "name": "Pangolin",
+  "Scientific": "Sunda pangolin",
+  "status": "Critically Endangered",
+  "Range": "Southeast Asia",
+  "photo": "assets/Pangolin_brought_to_the_Range_office_KMTR_AJTJ.png",
+  "ImageAttribution": "Piekfrosch / CC BY-SA"
+  }]
