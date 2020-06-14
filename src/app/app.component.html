@@ -1,68 +1,14 @@
-<!--mat-sidenav-container>
-  <mat-sidenav #sidenav role="navigation">
-    <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-  </mat-sidenav-content>
-
-
-    <mat-card *ngFor="let animals  of animals | async">
-        <mat-card-title>{{animals.name}}</mat-card-title>
-        <img [srcset]="animals.photo" [alt]>
-        <mat-card-content>
-
-          <dl class="myContent">
-          <dt class="mat-small">Name</dt>
-          <dd class="mat-body-2">{{ animals.name}}</dd>
-          <dt class="mat-small">Scientific</dt>
-          <dd class="mat-body-2">{{ animals.ScientificName }}</dd>
-          <dt class="mat-small">Status</dt>
-          <dd class="mat-body-2">{{ animals.status }}</dd>
-          <dt class="mat-small">Range</dt>
-          <dd class="mat-body-2">{{ animals.Range }}</dd>
-        </dl>
-      </mat-card-content>
-    </mat-card-->
-
 <mat-toolbar color="primary">
-  <h1>Critically Endangered animals</h1>
+  <h1>Critically Endangered Animals</h1>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon>account_circle</mat-icon>
   </button>
-
-
-
-
-  <!--div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </div-->
-
-
-
   <mat-menu #menu="matMenu">
     <button mat-menu-item class="menu-button">Log out</button>
   </mat-menu>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened role="region">
-    <!--mat-form-field class="search">
-      <input matInput placeholder="Search animals">
-    </mat-form-field-->
-    <!--mat-divider></mat-divider>
-    <ng-container *ngFor="let animals of animals | async; last as last">
-      <mat-list>
-        <h3 matSubheader>{{ animals.name }}</h3>
-
-      </mat-list>
-      <mat-divider *ngIf="!last"></mat-divider>
-    </ng-container-->
-
 
     <ng-container>
 
@@ -105,20 +51,19 @@
   </mat-sidenav>
   <mat-sidenav-content role="region">
 
-    <mat-card *ngFor="let animals  of animals | async">
-      <mat-card-title>{{animals.name}}</mat-card-title>
-      <img [srcset]="animals.photo" [alt]>
+    <mat-card *ngFor="let animal of animals | async">
+      <mat-card-title>{{animal.name}}</mat-card-title>
+      <img mat-card-image [src]="animal.photo" alt="">
       <mat-card-content>
-
         <dl class="myContent">
           <dt class="mat-small">Name</dt>
-          <dd class="mat-body-2">{{ animals.name}}</dd>
+          <dd class="mat-body-2">{{ animal.name}}</dd>
           <dt class="mat-small">Scientific</dt>
-          <dd class="mat-body-2">{{ animals.ScientificName }}</dd>
+          <dd class="mat-body-2">{{ animal.Scientific }}</dd>
           <dt class="mat-small">Status</dt>
-          <dd class="mat-body-2">{{ animals.status }}</dd>
+          <dd class="mat-body-2">{{ animal.status }}</dd>
           <dt class="mat-small">Range</dt>
-          <dd class="mat-body-2">{{ animals.Range }}</dd>
+          <dd class="mat-body-2">{{ animal.Range }}</dd>
         </dl>
       </mat-card-content>
     </mat-card>
@@ -127,4 +72,3 @@
 
 
 <footer class="mat-toolbar mat-primary mat-toolbar-single-row"></footer>
-

@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
     this.filterState = animalService.filterState;
     this.filter = animalService.filters;
   }
-
   ngOnInit() {
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -77,7 +76,5 @@ export class AppComponent implements OnInit {
       }
     });
   }
-
 }
-
 
