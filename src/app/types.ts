@@ -4,6 +4,7 @@ export interface Animal {
   ScientificName: string;
   ConservationStatus: string;
   Range: string;
+  ImageAttribution: string;
 }
 
 export interface Filter {
