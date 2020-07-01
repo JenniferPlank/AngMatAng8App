@@ -19,7 +19,7 @@ import { MatNativeDateModule } from '@angular/material';
 import { MatSelectModule,  } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from 'src/app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({

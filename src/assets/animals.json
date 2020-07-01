@@ -102,7 +102,7 @@
     "Scientific": "Panthera tigris sondaica",
     "status": "Critically Endangered",
     "Range": "Sumatra",
-    "photo": "assets/Sumatran_Tiger_006.png"
+    "photo": "assets/Sumatran_Tiger.png"
   },
   {
     "name": "Vaquita",
@@ -116,13 +116,13 @@
     "Scientific": "Saiga tatarica",
     "status": "Critically Endangered",
     "Range": "Russia, Kazakhstan",
-    "photo": "assets/Saiga_antelope_at_the_Stepnoi_Sanctuary.png"
+    "photo": "assets/Saiga_tartarica.png"
   },
   {
     "name": "Pangolin",
     "Scientific": "Sunda pangolin",
     "status": "Critically Endangered",
     "Range": "Southeast Asia",
-    "photo": "assets/Pangolin.png"
+    "photo": "assets//Pangolin_brought_to_the_Range_office_KMTR_AJTJ.png"
   }
 ]

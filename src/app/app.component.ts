@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AnimalService } from './animal.service';
+import { AnimalService } from 'src/animal.service';
 import { Observable } from 'rxjs';
-import { Animal, FilterState, Filter, Option } from './types';
+import { Animal, FilterState, Filter, Option } from 'src/types';
 
 @Component({
   selector: 'app-root',
